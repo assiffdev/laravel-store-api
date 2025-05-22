@@ -20,7 +20,7 @@ class RolesPermissionsSeeder extends Seeder
         ]);
 
         $AppAdminRoleAPI = Role::create([
-            'name' => 'app-admin',
+            'name' => 'super-admin',
             'guard_name' => 'api',
         ]);
 
