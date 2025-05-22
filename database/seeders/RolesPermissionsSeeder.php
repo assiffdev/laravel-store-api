@@ -18,8 +18,19 @@ class RolesPermissionsSeeder extends Seeder
             'name' => 'app-admin',
             'guard_name' => 'web',
         ]);
+
         $AppAdminRoleAPI = Role::create([
             'name' => 'app-admin',
+            'guard_name' => 'api',
+        ]);
+
+        $StoreAdminRole = Role::create([
+            'name' => 'store-admin',
+            'guard_name' => 'api',
+        ]);
+
+        $StoreUserRole = Role::create([
+            'name' => 'store-user',
             'guard_name' => 'api',
         ]);
 
