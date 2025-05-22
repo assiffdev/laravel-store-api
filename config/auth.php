@@ -39,12 +39,7 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
-        ],
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
-            'hash' => true, //to ensure that the API token will not be saved as plain text in DB
-        ],
+        ]
     ],
 
     /*
