@@ -43,6 +43,7 @@ return [
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
+            'hash' => false, //set false to ensure that the API token will be saved as plain text in DB
         ],
     ],
 
