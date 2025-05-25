@@ -23,6 +23,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'store_id',
+        'is_active',
+        'role'
     ];
 
     /**
@@ -47,4 +50,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Get the store that owns the user.
+     */
+    public function store()
+    {
+        return $this->belongsTo(Store::class);
+    }
+    
 }
